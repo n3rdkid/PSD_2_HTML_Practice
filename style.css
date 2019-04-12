@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+body{
+	background-color: gray;
+}
+.container{
+	padding:40px 20px;
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+#hero
+{
+	background-image: linear-gradient(rgba(218,51,46,0.6),rgba(218,51,46,0.6)), url('./images/hero_background.png');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	max-height: 850px;
+	overflow:hidden;
+}
+h2{
+	margin:0;
+	font-size: 52px;
+	text-transform: uppercase;
+	color: white;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+.cta__para{
+	font-size: 36px;
+	color: white;
+}
+.nav__item{
+	display: inline-block;
+}
+.nav__link{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	border-bottom: 4px;	margin-left: 42px;
+	padding-bottom: 3px;
+}
+.nav__link:hover{
+
+	border-bottom: white 4px solid;
+}
+.cta{
+	display: flex;
+	margin-top: 90px;
+	justify-content:space-between;
+	position: relative;
+}
+.cta__info{
+	flex:1 0 55%;
+	padding-right:100px;
+}
+
+.button{
+	background: #282828;
+	padding: 16px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	display: inline-flex;
+	justify-content: center;
+	align-items:  center;
+	border-radius: 50px;	transition: 0.3s;
+}
+.button:hover{
+	background:#383737;
+
+}
+.button__image{
+	margin:0 22px;
+}
+.button__label{
+
+	margin-right:22px; 
+}
+
+.iphone{
+	margin-bottom:-240px;
+
+}

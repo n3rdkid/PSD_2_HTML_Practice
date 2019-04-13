@@ -1,92 +1,248 @@
-*{
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
-body{
-	background-color: gray;
-}
-.container{
-	padding:40px 20px;
-	max-width: 1100px;
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-}
-#hero
-{
-	background-image: linear-gradient(rgba(218,51,46,0.6),rgba(218,51,46,0.6)), url('./images/hero_background.png');
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	max-height: 850px;
-	overflow:hidden;
-}
-h2{
-	margin:0;
-	font-size: 52px;
-	text-transform: uppercase;
-	color: white;
-}
-.header{
-	display: flex;
-	justify-content: space-between;
-}
-.cta__para{
-	font-size: 36px;
-	color: white;
-}
-.nav__item{
-	display: inline-block;
-}
-.nav__link{
-	text-decoration: none;
-	color: white;
-	text-transform: uppercase;
-	border-bottom: 4px;	margin-left: 42px;
-	padding-bottom: 3px;
-}
-.nav__link:hover{
-
-	border-bottom: white 4px solid;
-}
-.cta{
-	display: flex;
-	margin-top: 90px;
-	justify-content:space-between;
-	position: relative;
-}
-.cta__info{
-	flex:1 0 55%;
-	padding-right:100px;
+a {
+    text-decoration: none;
 }
 
-.button{
-	background: #282828;
-	padding: 16px;
-	font-size: 18px;
-	text-transform: uppercase;
-	color: white;
-	display: inline-flex;
-	justify-content: center;
-	align-items:  center;
-	border-radius: 50px;	transition: 0.3s;
-}
-.button:hover{
-	background:#383737;
-
-}
-.button__image{
-	margin:0 22px;
-}
-.button__label{
-
-	margin-right:22px; 
+.container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.iphone{
-	margin-bottom:-240px;
+#hero {
+    background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('./images/hero_background.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 850px;
+    overflow: hidden;
+}
 
+h2 {
+    margin-bottom: 40px;
+    font-size: 52px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 56px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta__para {
+    font-size: 36px;
+    color: white;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 4px;
+    margin-left: 42px;
+    padding-bottom: 3px;
+}
+
+.nav__link:hover {
+
+    border-bottom: white 4px solid;
+}
+
+.cta {
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cta__info {
+    flex: 1 0 55%;
+    padding-right: 100px;
+}
+
+.button {
+    background: #282828;
+    padding: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #383737;
+
+}
+
+.button__image {
+    margin: 0 22px;
+}
+
+.button__label {
+
+    margin-right: 22px;
+}
+
+.app-features {
+    background: #ffffff;
+}
+
+.iphone {
+    margin-bottom: -240px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-4-app {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature__description {
+    line-height: 26px;
+    margin: 0;
+}
+
+.feature__title {
+    margin: 35px 0;
+}
+
+.app-features__title {
+    margin: 20px 0;
+    text-align: center;
+    color: #8a8a8a;
+}
+
+.app-features__description {
+    padding: 0 170px;
+    text-align: center;
+    color: #8a8a8a;
+    line-height: 32px;
+}
+
+.download-info {
+    width: 60%;
+}
+
+.nose {
+    padding-bottom: 50px;
+    background-color: #d7dedc;
+    background: url('./images/clown_lady.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.title--red {
+    font-size: inherit;
+    color: #f55150;
+}
+
+.download-info {
+    padding: 200px 40px;
+}
+
+.download-info__title {
+    margin-bottom: 16px;
+}
+
+.download-info__description {
+
+    width: 350px;
+    font-size: 24px;
+    color: #585858;
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+
+.button--download {
+    background-color: #d9332d;
+    padding: 22px;
+}
+
+.button--download:hover {
+    background-color: #fa554f;
+}
+
+.footer {
+    background-color: #2e2e38;
+    color: white;
+}
+
+.posts,
+.tweets {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+
+}
+
+.col-4-footer {
+    flex-basis: 33%;
+    margin-right: 20px;
+}
+
+.posts__element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.tweets__element {
+    margin:30px;
+    margin-bottom: 26px;
+    vertical-align: middle;
+}
+
+.post__title {
+    padding-left: 20px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.about {
+    padding-right: 50px;
+    line-height: 24px;
+    font-size: 15px;
+}
+.inline{
+    display: inline;
+}
+.copyright{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0 25px;
+}
+.social{
+    display:inline-flex;
+}
+.social__button{
+    padding:10px;
+    margin:5px;
 }

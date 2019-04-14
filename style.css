@@ -104,11 +104,32 @@ h2 {
 .app-features {
     background: #ffffff;
 }
-
+.cta__image{
+    position:relative;
+}
 .iphone {
     margin-bottom: -240px;
 }
-
+.iphone--on{
+    position: absolute;
+    top: 125px;
+    left: 88px;
+}
+.js-wp-2{
+    opacity:0;
+}
+.js-wp-2.animated{
+    opacity:1;
+}
+.iphone__button{
+    position:absolute;
+    top:1px;
+    right:150px;
+}
+.iphone--on{
+    opacity:0;
+    transition:3s;
+}
 .row {
     display: flex;
     justify-content: space-evenly;

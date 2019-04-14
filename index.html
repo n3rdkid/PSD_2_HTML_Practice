@@ -4,6 +4,7 @@
 <head>
 	<title>PSD 2 HTML Practice</title>
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -45,8 +46,10 @@
 						<span class="button__label">Download on Appstore</span>
 					</a>
 				</div>
-				<div class="cta__image">
-					<img class="iphone" src="images/iphone.png">
+				<div class="cta__image js-wp-2">
+					<img class="iphone iphone--off" src="images/iphone-off.png">
+					<img class="iphone__button" src="images/iphone-btn.png">
+					<img class="iphone iphone--on" src="images/iphone-on.png">
 				</div>
 			</div>
 	</section>
@@ -148,6 +151,9 @@
 			</div>
 		</div>
 	</section>
+
+  <script src="noframework.waypoints.min.js"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>
